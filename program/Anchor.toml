@@ -1,0 +1,19 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.devnet]
+veritas = "zA31b9PmzRGaNQt4Es6b3W9HTCchXwhfcWoxZYMymsX"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+
+[scripts]
+test = "cargo test"
+
+[hooks]
